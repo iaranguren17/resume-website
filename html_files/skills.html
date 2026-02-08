@@ -2,45 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ivan Aranguren - Skills</title>
-    <link rel="stylesheet" href="../css_files/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Aranguren - Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
 </head>
-<body>
+<body class="bg-gradient-to-b from-gray-50 to-blue-50 min-h-screen flex flex-col">
 
-    <header class="site-header">
-        <h1>Ivan Aranguren</h1>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="education.html">Education</a>
-            <a href="skills.html">Skills</a>
-            <a href="experience.html">Experience</a>
+    <!-- Header -->
+    <header class="bg-blue-800 text-white shadow-lg sticky top-0 z-10">
+        <nav class="max-w-4xl mx-auto px-6 py-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+            <h1 class="text-3xl font-bold">Ivan Aranguren</h1>
+            <ul class="flex space-x-6 flex-wrap">
+            <li><a href="index.html" class="px-4 py-2 rounded-lg hover:bg-white/20 transition-all">Home</a></li>
+            <li><a href="education.html" class="px-4 py-2 rounded-lg hover:bg-white/20 transition-all bg-white/20">Education</a></li>
+            <li><a href="skills.html" class="px-4 py-2 rounded-lg hover:bg-white/20 transition-all">Skills</a></li>
+            <li><a href="experience.html" class="px-4 py-2 rounded-lg hover:bg-white/20 transition-all">Experience</a></li>
+            </ul>
+        </div>
         </nav>
     </header>
 
-    <main>
-        <section id="skills">
-            <h2>Skills</h2>
-            <article class="skills-list">
-                <h3>Technical Skills</h3>
-                <li>Python</li>
-                <li>SQL & Database Management</li>
-                <li>Machine learning</li>
-                <li>IA tools</li>
-            </article>
-            <article class="skills-list">
-                <h3>Professional Skills</h3>
-                <li>Problem-solving</li>
-                <li>Project organization</li>
-                <li>Adaptability</li>
-                <li>Problem solving</li>
-            </article>
-        </section>
+    <main class="max-w-5xl mx-auto px-6 py-20 flex-1">
+
+        <!-- Technical Skills-->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-primary mb-6">Skills</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 mb-12"></div>
+        <div class="bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all w-full">
+            <div class="flex flex-col items-center md:flex-row md:items-center gap-6 mb-4">
+                <div class="text-center md:text-left">
+                    <h3>Technical Skills</h3>
+                    <li>Python</li>
+                    <li>SQL & Database Management</li>
+                    <li>Machine learning</li>
+                    <li>IA tools</li>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Skills-->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-primary mb-6">Skills</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all w-full">
+            <div class="flex flex-col items-center md:flex-row md:items-center gap-6 mb-4">
+                <div class="text-center md:text-left">
+                    <h3>Professional Skills</h3>
+                    <li>Problem-solving</li>
+                    <li>Project organization</li>
+                    <li>Adaptability</li>
+                    <li>Problem solving</li>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+                
     </main>
 
-
-
-    <footer class="site-footer">
-        <p>&copy; 2026 Ivan Aranguren</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <p class="text-sm">&copy; 2026 Ivan Aranguren</p>
     </footer>
 
 </body>
